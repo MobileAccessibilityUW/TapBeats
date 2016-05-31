@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Click the button to play sounds!</string>
+    <string name="app_name">TapBeats</string>
+<string name="button">Play</string>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.capstone.gamesongplayer"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:name=".GlobalVariableStates" android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="true">
+        <activity android:name=".IntroductionScreen" android:label="TapBeats" android:noHistory="true" android:screenOrientation="portrait">
+        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>    
+        <activity android:name=".MainScreen" android:label="TapBeats" android:noHistory="true" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SongSelect" android:label="Song Select" android:noHistory="true" android:screenOrientation="portrait"></activity>
+        <activity android:name=".player"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:noHistory="true">
+        </activity>
+        <activity android:name=".QuickPlay"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:noHistory="true">
+        </activity>
+        <activity android:name=".Options"
+                  android:label="Options"
+                  android:screenOrientation="portrait"
+                  android:noHistory="true">
+        </activity>
+        <activity android:name=".HowToPlay"
+                  android:label="HowToPlay"
+                  android:screenOrientation="portrait"
+                  android:noHistory="true">
+        </activity>
+                <activity android:name=".Tutorial"
+                  android:label="Tutorial"
+                  android:screenOrientation="portrait"
+                  android:noHistory="true">
+        </activity>
+        <activity android:name=".InstructionsScreen" android:label="Instructions" android:noHistory="true" android:screenOrientation="portrait"></activity>
+        <activity android:name=".ScoreScreen" android:label="Score Screen" android:noHistory="true" android:screenOrientation="portrait"></activity>
+        <activity android:name=".StudioMode" android:label="Studio Mode" android:noHistory="true" android:screenOrientation="portrait"></activity>
+        <activity android:name=".StudioResults" android:label="Studio Results" android:noHistory="true" android:screenOrientation="portrait" />
+        <activity android:name=".StudioBrowse" android:label="Studio Browse" android:noHistory="true" android:screenOrientation="portrait" />
+        <activity android:name=".StudioBrowseSong" android:label="Studio Browse Song" android:noHistory="true" android:screenOrientation="portrait" />
+        <activity android:name=".StudioSave" android:label="Studio Save" android:noHistory="true" android:screenOrientation="portrait" />
+        <activity android:name=".Career" android:label="Career" android:noHistory="true" android:screenOrientation="portrait" />
+	<receiver android:process=":remote" android:name=".Booter"></receiver>
+    </application>
+    <uses-sdk android:minSdkVersion="5" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+</manifest> 
